@@ -252,7 +252,7 @@
 }
 
 - (void)updateProgressBar:(NSTimer *)sender {
-    [_AIProgressView setProgress:MIN(1, ABS([_startTime timeIntervalSinceNow]) / GSTATE.searchTimeOut) animated:YES];
+    [_AIProgressView setProgress:MIN(1, ABS([_startTime timeIntervalSinceNow]) / GSTATE.searchTimeOut) animated:NO];
 }
 
 - (void)enableControls:(BOOL)enableControls {
@@ -261,7 +261,7 @@
     _settingsButton.enabled = enableControls;
     _startTime = [NSDate date];
     if (!enableControls) {
-        _progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.03 target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
+        _progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
     } else {
         [_progressTimer invalidate];
         [_AIProgressView setProgress:0 animated:NO];
@@ -316,12 +316,9 @@
         }];
     }];
     
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hint" message:[NSString stringWithFormat:@"You should move %@.", move.vectorString] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//    [alert show];
 }
 
 - (void)autoRunThinking:(NSNotification *)notification {
-    NSLog(@"Thinking updated");
     NSInteger depth = [[notification userInfo][@"depth"] integerValue];
     _AIProgressLabel.text = [NSString stringWithFormat:@"Thinking %ld steps forward...", (long)depth];
 }
