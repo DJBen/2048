@@ -10,29 +10,29 @@
 	<string>m2048</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F15A379B-9F65-4DF6-A94E-EC16C9F7A152</key>
+		<key>6C29944B3854DE4B2B51F0E5621256D4BB50671E</key>
 		<string>https://github.com/DJBen/2048.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>m2048.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F15A379B-9F65-4DF6-A94E-EC16C9F7A152</key>
+		<key>6C29944B3854DE4B2B51F0E5621256D4BB50671E</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/DJBen/2048.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F15A379B-9F65-4DF6-A94E-EC16C9F7A152</string>
+	<string>6C29944B3854DE4B2B51F0E5621256D4BB50671E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F15A379B-9F65-4DF6-A94E-EC16C9F7A152</string>
+			<string>6C29944B3854DE4B2B51F0E5621256D4BB50671E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>2048</string>
 		</dict>

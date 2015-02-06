@@ -173,7 +173,7 @@
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 // Notification: searching complete at current depth
-                [[NSNotificationCenter defaultCenter] postNotificationName:M2AISearchDepthCompleteNotificationName object:nil userInfo:@{@"depth": @(depth), @"bestMove": result ? result.move : [NSNull null]}];
+                [[NSNotificationCenter defaultCenter] postNotificationName:M2AISearchDepthCompleteNotificationName object:self userInfo:@{@"depth": @(depth), @"bestMove": result ? result.move : [NSNull null]}];
             });
             
             result = [self searchWithPlayerTurn:YES depth:depth alpha:-10000 beta:10000 positions:0 cutoffs:0];
